@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    height: 530vh;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/** Header **/
+
+
+
+
+header{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    background:#0099ff00;
+    z-index: 10;
+}
+header .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .head .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .head .logo h2{
+    margin-right: 20px;
+}
+header .head .logo input{
+    border: 1px solid #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+header .head nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .head nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+header .head nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    position: relative;
+    transition: .3s ease;
+}
+header .head nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #0099ff;
+    left: 0;
+    bottom: -5px;
+    transition: .5s ease;
+}
+header .head nav ul li a:hover{
+    color: #0099ff;
+}
+header .head nav ul li a:hover::after{
+    width: 100%;
+}
+.contact{
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+
+
+
+/** Main **/
+
+
+
+.space{
+    width: 100%;
+    height: 100px;
+    background: #0099ff33;
+}
+
+
+
+
+/** Home **/
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 30px;
+    background: linear-gradient(to bottom, #0099ff33 90%,transparent);
+}
+.home .row{
+    flex-basis: 50%;
+}
+.home .row h4{
+    color: #0099ff;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.home .row h1{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .row p{
+    margin: 5px 0 20px;
+}
+.home .row .book{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.home .row .book a{
+    text-decoration: none;
+    color: #fff;
+    background: #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.home .row .book span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-image: url(IMG-20221123-WA0003.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+}
+.home .row .book span::after{
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-image: url(icons8-play-button-circled-3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+}
+.home .row .book .story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .row .img{
+    display: block;
+    height: 400px;
+    width:300px;
+    background-image: url(IMG-20221123-WA0004.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.home .row .img::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background-image: url(IMG-20221123-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    right: -200px;
+    bottom: -50px;
+}
+
+
+
+
+/** Destination **/
+
+
+
+.destination{
+    margin: 150px 50px 50px;
+}
+.destination .cap h2{
+    font-size: 30px;
+}
+.destination .cap .vote{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.destination .cap .vote p{
+    width: 50%;
+}
+.destination .cap .vote .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.destination .cap .vote .main span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0099ff;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.destination .cap .vote .main span:last-child{
+    background: #0099ff;
+}
+.destination .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 20px;
+}
+.destination .card .ca{
+    height: 400px;
+    width: 300px;
+    margin: 50px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.destination .card .c1{
+    background-image: url(IMG-20221123-WA0003.jpg);
+}
+.destination .card .c2{
+    background-image: url(IMG-20221123-WA0013.jpg);
+}
+.destination .card .c3{
+    background-image: url(IMG-20221123-WA0011.jpg);
+}
+.destination .card .c4{
+    background-image: url(IMG-20221123-WA0007.jpg);
+}
+.destination .card .ca .info{
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    z-index: 5;
+    overflow: hidden;
+}
+.destination .card .ca:hover .info{
+    opacity: 1;
+}
+.destination .card .ca .info span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff60;
+    position: absolute;
+    z-index: 2;
+    -webkit-filter: blur(20px);
+    filter: blur(10px);
+}
+.destination .card .ca p, .destination .card .ca h4{
+    z-index: 3;
+}
+
+
+
+
+
+
+/** Packages **/
+
+
+
+
+.package{
+    background: #0099ff33;
+    padding: 150px 50px;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.package .cap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.package .cap p{
+    width: 70%;
+    text-align: center;
+}
+.package .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 30px;
+}
+.package .card .ca{
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 10px;
+}
+.package .card .ca span{
+    display: block;
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width:400px;
+    border-radius: 10px;
+    margin: 0 0 20px;
+}
+.package .card .ca .s1{
+    background-image: url(IMG-20221123-WA0004.jpg);
+}
+.package .card .ca .s2{
+    background-image: url(IMG-20221123-WA0008.jpg);
+}
+.package .card .ca .s3{
+    background-image: url(IMG-20221123-WA0013.jpg);
+}
+.package .card .ca h3{
+    margin: 0 0 5px;
+}
+.package .card .ca p{
+    margin: 0 0 10px;
+}
+.package .card .ca .now{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.package .card .ca .now a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #0099ff;
+    border: 1px solid #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+.package .card .ca .now a:hover{
+    background: #0099ff;
+    color: #fff;
+    border: none;
+}
+.package .more{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background: #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+.package .more:hover{
+    background: none;
+    color: #0099ff;
+    border: 1px solid #0099ff;
+}
+
+
+
+
+
+
+
+
+/** Gallery **/
+
+
+
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 150px;
+}
+.gallery .row{
+    flex-basis: 50%;
+    padding: 0 30px;
+}
+.gallery .row span{
+    display: block;
+    height: 400px;
+    width: 300px;
+    background-image: url(IMG-20221123-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.gallery .row span::before,.gallery .row span::after{
+    content: '';
+    position: absolute;
+    background: #000;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.gallery .row span::before{
+    height: 160px;
+    width: 300px;
+    top: -50px;
+    right: -320px;
+    background-image: url(IMG-20221123-WA0010.jpg);
+}
+.gallery .row span::after{
+    height: 300px;
+    width: 300px;
+    bottom: -30px;
+    right: -320px;
+    background-image: url(IMG-20221123-WA0007.jpg);
+}
+.gallery .row h2{
+    margin: 0 0 10px;
+}
+.gallery .row p{
+    margin: 0 0 20px;
+    width: 80%;
+}
+.gallery .row a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background: #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/** Special **/
+
+
+
+
+.special{
+display: flex;
+align-self: center;
+justify-content: center;
+background: #0099ff33;
+padding: 50px;
+}
+.special .row{
+    flex-basis: 50%;
+    position: relative;
+}
+.special .row p{
+    margin: 0 0 20px;
+}
+.special .row a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background: #0099ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.special .row input{
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.special .row button{
+    background: #0099ff;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.special .row button img{
+    width: 20px;
+}
+
+
+
+
+
+/** Footer **/
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #033557;
+    padding: 50px 20px;
+    color: #fff;
+    flex-direction: column;
+}
+footer .f1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .f1 .pathway{
+    width: 25%;
+}
+footer .f1 nav ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+footer .f1 nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+footer .f1 nav ul li a:hover{
+    text-decoration: underline;
+}
